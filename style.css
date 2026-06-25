@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color:rgb(98, 98, 98);
+    font-family: "Cormorant Garamond", serif;
+    background-image: url('images/background.jpg');
+    background-size: cover;          
+    background-position: center;     
+    background-repeat: no-repeat;    
+    background-attachment: fixed;
+}
+
+header{
+    background: #4b6cb7;  
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7); 
+    background: linear-gradient(to right, #182848, #4b6cb7); 
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+    gap: 15px;
+}
+
+.logo-group {
+    display: flex;
+    align-items: center; 
+    gap: 100px;           
+}
+
+.logo-header i{
+    font-size: 3rem;
+    color:white;
+}
+
+.nom {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Playfair", serif;
+
+    background: linear-gradient(
+        to bottom, 
+        #bdc3c7 0%, 
+        #d1d5d8 45%, 
+        #ffffff 50%, 
+        #d1d5d8 55%, 
+        #bdc3c7 100%
+    );
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+}
+
+#calculateur{
+    margin-top: 50px;
+    text-align:center;
+}
+
+#calculateur h1{
+    margin-bottom: 70px;
+    font-family: "Playfair", serif;
+    font-size: 2.5rem;
+    color: #5b5d5d;
+    text-shadow: 2px 2px 0px #ffffff, 4px 4px 0px rgba(0,0,0,0.1);
+}
+
+#calculateur input{
+    margin-bottom: 50px;
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,210px); 
+    justify-content: center;
+    gap: 20px; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    background: #4b6cb7; 
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7); 
+    background: linear-gradient(to right, #182848, #4b6cb7);
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 20px;
+}
+
+.box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background: #ADA996;  
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+}
+
+.box h3{
+    margin-bottom:20px;
+}
+
+.box p{
+     margin-bottom:20px;
+     color: darkblue;
+     font-weight: bold;
+}
+
+#btnCalculer, #btnComparer, #btnSwitch, #btnReset{
+    border:none;
+    padding: 6.8px 15px;
+    border-radius: 50px;
+    background: #ADA996;  
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+#btnCalculer:hover, #btnComparer:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    cursor:pointer;
+}
+
+.button-container {
+    display:flex;
+    justify-content: center;
+    margin-top: 40px;
+  
+}
+
+#messageAlerte{
+    white-space: pre-line;
+    text-align: center;
+    display:block;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1.4rem;
+}
+
+#suggestionContainer{
+    display: grid;
+    grid-template-columns: repeat(3,210px); 
+    justify-content: center;
+    gap: 20px; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    background: #4b6cb7;  
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  
+    background: linear-gradient(to right, #182848, #4b6cb7);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 20px;
+    text-align: center;
+    display:block;
+    width: 100%;
+    font-size: 1.4rem;
+}
+
+
+#suggestionContainer p{
+    text-align: center;
+    display:block;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1.4rem;
+    color: orange;
+}
+
+#reelDepense, #reelPlaisir, #reelEpargne {
+     
+    padding: 3px 3px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+

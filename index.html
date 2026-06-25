@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link href="style.css" rel="stylesheet" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+<title>Document</title>
+        
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo-group">
+                    <div class="logo-header">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <span class="nom">Gestionnaire de dépenses</span> 
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="calculateur">
+                <h1>Calculateur</h1>
+                    <input type="number" id="masaisiedesalaire" placeholder="Saisissez votre salaire" required>
+                    <button id="btnCalculer">Calculer</button>
+                     <button id="btnReset">Réinitialiser</button>
+            </div>
+            <div id="resultats">
+                <div class="container">
+                    <div class="box">
+                        <h3>Dépenses (50%)</h3>
+                            <p id="resultatsDepense">0</p>
+                            <input type="number" id="reelDepense" placeholder="Dépense réelle" required>
+                    </div>
+                    <div class="box">
+                        <h3>Plaisir (30%)</h3>
+                            <p id="resultatsPlaisir">0</p>
+                            <input type="number" id="reelPlaisir" placeholder="Dépense réelle" required>
+                    </div>
+                    <div class="box">
+                        <h3>Epargne (20%)</h3>
+                            <p id="resultatsEpargne">0</p>
+                            <input type="number" id="reelEpargne" placeholder="Dépense réelle" required>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button id="btnComparer">Comparer avec la réalité</button>
+                </div>
+            </div>
+            <div id="suggestionContainer" style="display:none;">
+                <p id="messageAlerte"></p>
+                <p id="texteSuggestion"></p>
+                <button id="btnSwitch">Passer au modèle 70/20/10</button>
+            </div>
+            </div>
+        </main>
+        <script src="scripts.js"></script>
+        
+    </body>
+</html>
